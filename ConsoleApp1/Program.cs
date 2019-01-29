@@ -77,8 +77,11 @@ namespace KampoSkaiciavimas
             public int ParinktiMazajiKampa(int suskaiciuotasKampas)
             {
                 int mazasisKampas = 0;
-
-                if (suskaiciuotasKampas>180)
+                if (suskaiciuotasKampas > 360)
+                {
+                    mazasisKampas = 2 * visiLaipsniai - suskaiciuotasKampas;
+                }
+                else if (suskaiciuotasKampas>180)
                 {
                     mazasisKampas = visiLaipsniai - suskaiciuotasKampas;
                 }
