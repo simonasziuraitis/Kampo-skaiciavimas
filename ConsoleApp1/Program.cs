@@ -22,7 +22,7 @@ namespace KampoSkaiciavimas
 
                     if (valandos >= 24 || minutes >= 60)
                     {
-                        Console.WriteLine("Neteisingai ivedete laika. Valandu ir minutiu reiksmes negali buti didesnei nei 23:59");
+                        Console.WriteLine("Neteisingai ivedete laika. Valandu ir minuxiu reiksmes negali buti didesnes nei 23:59");
                         Console.WriteLine("Iveskite valandas ir minutes (naudokite formata vv:mm):");
                         ivedimas = Console.ReadLine();
                         valandosMinutes = ivedimas.Split(':');
